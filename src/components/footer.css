@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+footer {
+    background: #282828;
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.list {
+    padding: 0;
+}
+
+.list li {
+    text-align: center;
+    list-style-type: none;
+    padding: 5px;
+    position: relative;
+}
+
+.list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+
+.list li:hover::before {
+    width: 50px;
+}
+
+.social-icons {
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i {
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #f18930;
+}
+
+.social-icons i:hover {
+    color: #f18930;
+}
+
+.bottom-bar {
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.square {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 0 !important;
+}
+
+.brand {
+    margin-top: 10px;
+    font-size: 32px;
+    color: #00a991;
+    font-weight: bold;
+}
+
+.about {
+    width: 85%;
+    color: white;
+    margin-top: 5px;
+}
+
+.heading {
+    margin-top: 20px;
+    font-size: 32px;
+    color: #00a991;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-content p {
+        font-size: 14px;
+    }
+
+    .list li {
+        padding: 3px;
+    }
+
+    .social-icons i {
+        font-size: 18px;
+    }
+
+    .brand {
+        font-size: 28px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+}

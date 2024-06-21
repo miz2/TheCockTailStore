@@ -1,0 +1,63 @@
+/* form.css */
+
+.section.search {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px; /* Adjust the max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+  padding: 0.5rem; /* Adjusted padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem; /* Adjusted font size for better readability */
+  color: #333; /* Dark text color for better visibility */
+  padding: 0.5rem; /* Adjusted padding for better input box size */
+}
+
+.search-input::placeholder {
+  color: #a2b2bd; /* Placeholder text color */
+}
+
+.search-btn {
+  background-color: #3498db;
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Adjusted padding for better button size */
+  font-size: 0.9rem; /* Adjusted font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 0.5rem;
+}
+
+.search-btn:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+/* Responsive Placeholder */
+@media (max-width: 437px) {
+  .search-input::placeholder {
+    font-size: 0.8rem; /* Adjust placeholder font size */
+  }
+}
